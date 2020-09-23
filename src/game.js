@@ -21,7 +21,8 @@ export default class FlappyBird {
    animate() {
      this.level.drawBackground(this.ctx);
      this.bird.animate(this.ctx);
-     if( this.bird.y > 630 ) {
+   //   console.log(this.bird.y)
+     if( this.bird.y > 630 || this.bird.y < 10 ) {
          this.restart();
      }
      if ( this.running ) {

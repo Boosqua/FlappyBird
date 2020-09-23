@@ -1,0 +1,1 @@
+webpack --watch --mode=development
